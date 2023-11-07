@@ -12,12 +12,6 @@
 
 -------
 
-### 5-shot
-
-
-
------
-
 ### Pretraining
 
 预训练
@@ -102,19 +96,37 @@ LoRA（Low-Rank Adaptation of Large Language Models），直译为大语言模�
 ### PPO(Proximal Policy Optimisation)
 
 
+----
+### zero-shot
 
+零样本提示
+
+通常出现在 Prompt 相关的内容中，表示 prompt 中没有样本提示
+
+例如以下的 prompt
+```txt
+Q: <问题>?
+A: 
+```
 -----
 
-### few shot
+### few-shot
 
-小样本
+小样本提示
 
+通常出现在 Prompt 相关的内容中，表示 prompt 中有少量的样本提示。通常为 1-5 个样本，被称为 few-shot。
+
+例如以下的 prompt中，有 3 个样本提示，被称为 few-shot，也可以称为 3-shot
+```txt
+This is awesome! // Positive
+This is bad! // Negative
+Wow that movie was rad! // Positive
+What a horrible show! //
+```
 -----
+### 5-shot
 
-### Zero shot
-
-零样本
-
+请参照 few-shot解释
 
 -----
 ### PEFT(Parameter-Efficient Fine-Tuning)
